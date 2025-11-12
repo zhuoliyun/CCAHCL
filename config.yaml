@@ -1,0 +1,143 @@
+cora:
+  num_layers: 1
+  hid_dim: 1024
+  proj_dim: 1024
+  lr: 5.0e-04
+  weight_decay: 1.0e-05
+  drop_feature_rate: 0.6
+  drop_incidence_en_rate: 0.4
+  drop_incidence_ec_rate: 0.2
+  drop_incidence_nc_rate: 0.2
+  alpha: 0.9
+  tau_n: 0.5
+  tau_g: 0.5
+  tau_c: 0.5
+  w_g: 4  # 4
+  w_c: 1.5  #2
+  epochs: 600
+  dropout: 0.0
+  batch_size_1: null
+  batch_size_2: null
+  
+
+citeseer:
+  num_layers: 1
+  hid_dim: 1024
+  proj_dim: 1024
+  lr: 5.0e-05
+  weight_decay: 1.0e-05
+  drop_feature_rate: 0.6
+  drop_incidence_en_rate: 0.3
+  drop_incidence_ec_rate: 0.0
+  drop_incidence_nc_rate: 0.2
+  alpha: 0.02
+  tau_n: 1.0
+  tau_g: 0.2
+  tau_c: 0.8
+  w_g: 0.5
+  w_c: 0.5
+  epochs: 220
+  dropout: 0.0
+  batch_size_1: null
+  batch_size_2: null
+
+pubmed:
+  num_layers: 1
+  hid_dim: 1024
+  proj_dim: 1024
+  lr: 5.0e-04
+  weight_decay: 1.0e-05
+  drop_feature_rate: 0.2
+  drop_incidence_en_rate: 0.4
+  drop_incidence_ec_rate: 0.2
+  drop_incidence_nc_rate: 0.3
+  alpha: 0.5
+  tau_n: 0.2
+  tau_g: 0.2
+  tau_c: 0.6
+  w_g: 4
+  w_c: 1
+  epochs: 1050
+  dropout: 0.0
+  batch_size_1: null
+  batch_size_2: null
+
+cora_coauthor:
+  num_layers: 1
+  hid_dim: 2048
+  proj_dim: 2048
+  lr: 5.0e-04
+  weight_decay: 1.0e-05
+  drop_feature_rate: 0.45
+  drop_incidence_en_rate: 0.4
+  drop_incidence_ec_rate: 0.4
+  drop_incidence_nc_rate: 0.4
+  alpha: 0.95
+  tau_n: 0.8
+  tau_g: 0.1
+  tau_c: 0.8
+  w_g: 0.1  # 4
+  w_c: 0.8  #2
+  epochs: 350
+  dropout: 0.0
+  batch_size_1: null
+  batch_size_2: null
+  # num_layers: 1
+  # hid_dim: 512
+  # proj_dim: 512
+  # lr: 5.0e-04
+  # weight_decay: 1.0e-05
+  # drop_feature_rate: 0.5
+  # drop_incidence_rate: 0.4
+  # tau_n: 0.5
+  # tau_g: 0.5
+  # tau_c: 0.5
+  # w_g: 1  # 4
+  # w_c: 1  #2
+  # epochs: 500
+  # dropout: 0.1
+  # batch_size_1: null
+  # batch_size_2: null
+
+dblp_coauthor:
+  num_layers: 1
+  hid_dim: 256
+  proj_dim: 512
+  lr: 5.0e-03
+  weight_decay: 1.0e-05
+  drop_feature_rate: 0.4
+  drop_incidence_en_rate: 0.3
+  drop_incidence_ec_rate: 0.1
+  drop_incidence_nc_rate: 0.2
+  alpha: 0.95
+  tau_n: 0.5
+  tau_g: 0.2
+  tau_c: 1.0
+  w_g: 0.2
+  w_c: 0.1
+  epochs: 1500  #1200
+  dropout: 0.0
+  batch_size_1: 4096
+  batch_size_2: 4096
+
+ModelNet40:
+  num_layers: 1
+  hid_dim: 1024
+  proj_dim: 1024
+  lr: 1.0e-03
+  weight_decay: 1.0e-05
+  drop_feature_rate: 0.0
+  drop_incidence_en_rate: 0.4
+  drop_incidence_ec_rate: 0.1
+  drop_incidence_nc_rate: 0.2
+  alpha: 0.8
+  tau_n: 0.9
+  tau_g: 0.3
+  tau_c: 0.9
+  w_g: 0.5
+  w_c: 0.5
+  epochs: 800
+  dropout: 0.0
+  batch_size_1: null
+  batch_size_2: 8192
+
